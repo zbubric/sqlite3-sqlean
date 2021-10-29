@@ -1,0 +1,14 @@
+{
+  "name": "sqlite3-sqlean",
+  "version": "0.0.1",
+  "description": "Provide SQLean (sqlite3) extensions binaries as npm module",
+  "main": "index.js",
+  "config": {
+    "sqleanVersion": "0.9.1"
+  },
+  "scripts": {
+    "postinstall": "node scripts/getFiles.js"
+  },
+  "author": "Zoran Bubric <zbubric@gmail.com> ",
+  "license": "MIT"
+}
