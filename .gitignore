@@ -1,3 +1,7 @@
+# Downloaded libs and data
+lib
+libs.json
+
 # Logs
 logs
 *.log

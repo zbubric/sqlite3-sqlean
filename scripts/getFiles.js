@@ -75,6 +75,11 @@ const getExtension = () => {
 }
 
 (async () => {
+    // create lib target path if not exist
+    // create local path if not exists
+    if (!fs.existsSync('./lib/')){
+        fs.mkdirSync('./lib/', { recursive: true });
+    }    
     // prepare object to hold actual files
     const filePromises = [];
     console.log('Fetching OS-specific binaries from sqlean github releases page');
