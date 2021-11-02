@@ -1,7 +1,9 @@
 # SQLean (sqlite3) extensions as NPM package
-Simple utility package that fetch SQLean extension libs and expose their paths as constants that can be used with loadExtension method of Sqlite3 module.
+Simple utility package that fetch [SQLean](https://github.com/nalgeon/sqlean) extension libs and expose their paths as constants that can be used with loadExtension method of Sqlite3 module.
 
 Extensions are fetched as precompiled binaries suitable for installation OS (*.dll for Windows, *.so for Linux, *.dylib for macOS). Please note that binaries are 64-bit and require a 64-bit SQLite version.
+
+For details about [SQLean](https://github.com/nalgeon/sqlean) extensions, please check it's [readme](https://github.com/nalgeon/sqlean#readme)
 
 ## Installation
 To install, use 
@@ -47,4 +49,5 @@ Versions of sqlite3-sqlean module matching of sqlean binaries version:
 
 Version | sqlean ver. | comments
 --------- | ------------- | ----------
-0.1.0 | 0.9.1 | Initial version
+0.0.1 | 0.9.1 | Initial version
+0.0.2 | 0.9.1 | Bug fix: create lib folder if it does not exist
